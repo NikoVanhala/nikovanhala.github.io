@@ -1,0 +1,290 @@
+<head>
+
+    <title> NV - VÄLKKYLÄ</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 16px monospace;
+            line-height: 24px;
+        }
+
+        #page-wrap {
+            width: 600px;
+            margin: 40px auto 60px;
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            padding: 0 0 16px 0;
+            font-family: monospace;
+            font-size: 42px;
+            letter-spacing: 0px;
+            border-bottom: 1px solid rgb(187, 187, 187);
+            color: #555;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0 0 6px 0;
+            position: relative;
+            color: #555;
+        }
+
+        p {
+            font-family: monospace;
+            margin: 0 0 16px 0;
+            color: #777;
+            line-height: 120%;
+            font-size: 0.8vw;
+        }
+
+        a {
+            color: #555;
+            text-decoration: none;
+            border-bottom: 0px dotted #555;
+            font-weight: bold;
+        }
+
+        a:hover {
+            border-bottom-style: solid;
+            color: rgb(0, 0, 0);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .btn-default {
+            text-transform: uppercase;
+            color: #555;
+            background-color: transparent;
+            border-color: #555;
+            padding: 14px 20px;
+            margin: 0;
+            font-size: 16px;
+            border-radius: 0;
+            margin-top: 20px;
+        }
+
+        .btn-default:hover,
+        .btn-default:focus,
+        .btn-default.focus,
+        .btn-default:active,
+        .btn-default.active {
+            color: #fff;
+            background-color: #121d1f;
+            border-color: #121d1f;
+        }
+
+        .image-stack {
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(3, 2fr);
+            justify-items: stretch;
+        }
+
+        .image-stack__item-1 {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+        }
+
+        .image-stack__item-2 {
+            grid-row: 2;
+            grid-column: 1/span 3;
+            padding-top: 0%;
+            z-index: 2;
+        }
+
+        .image-stack__item-2B {
+            grid-row: 2;
+            grid-column: 3;
+            padding-top: 0%;
+            z-index: 2;
+            text-align: right;
+        }
+
+        .image-stack__item-3 {
+            grid-row: 3;
+            grid-column: 1/span 3;
+            padding-top: 0%;
+        }
+
+        .image-stack__item-4 {
+            grid-row: 3;
+            grid-column: 2/span 3;
+            padding-top: 10px;
+            padding-left: 10%;
+            padding-bottom: 0px;
+            z-index: 4;
+        }
+
+        .image-stack__item-5 {
+            grid-row: 3;
+            grid-column: 1/span 3;
+            padding-top: 0px;
+            padding-left: 0%;
+            padding-right: 0%;
+            z-index: 4;
+        }
+
+        .image-stack__item-5B {
+            grid-row: 4;
+            grid-column: 1/span 3;
+            padding-top: 30px;
+            padding-left: 0%;
+            padding-right: 0%;
+            z-index: 4;
+        }
+
+        .image-stack__item-6 {
+            grid-row: 5;
+            grid-column: 1/span 3;
+            padding-top: 70px;
+            padding-left: 0%;
+            padding-right: 0%;
+            z-index: 4;
+        }
+
+        .image-stack__item-7 {
+            grid-row: 6;
+            grid-column: 1/span 2;
+            padding-top: 70px;
+            padding-left: 0%;
+            padding-right: 7%;
+            z-index: 4;
+        }
+
+        .image-stack__item-8 {
+            grid-row: 6;
+            grid-column: 3;
+            padding-top: 70px;
+            padding-left: 0%;
+            padding-right: 0%;
+            z-index: 4;
+        }
+
+        .image-stack__item-9 {
+            grid-row: 7;
+            grid-column: 1/span 3;
+            padding-top: 70px;
+            padding-left: 0%;
+            padding-right: 0%;
+            z-index: 4;
+        }
+
+        .container {
+            padding: 0px 0px;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 60%;
+        }
+
+        #container {
+            --num-cols: 1;
+            --row-height: 200px;
+        }
+
+        #bottom-padding {
+            padding-bottom: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="image-stack">
+            <!-- <div id="page-wrap"> -->
+
+            <div class="image-stack__item-1">
+                <a href="img/välkkylä 1.jpg">
+                    <img src="img/välkkylä 1.jpg" ; width="100%">
+                </a>
+            </div>
+
+
+            <div class="image-stack__item-2">
+                <br><br>
+                <h1 class="fn">VÄLKKYLÄ STUDENT HOUSING </h1>
+            </div>
+
+
+            <div class="image-stack__item-3">
+                <p>
+                    <br> Archicad, Blender, Photoshop
+                    <br><br>
+                    CO-LIVING QUARTERS is a design proposal which offers a diverse and versatile social living
+                    environment for students. The old and appreciated architecture is brought together with the new and
+                    innovative through deliberate massing and choice of materials. Existing spaces have been redesigned
+                    and complemented with additional spaces for public culture activities, creating a public plaza with
+                    which the residential buildings share the plot with.
+                    <br><br>3rd Prize in national competition
+                </p>
+            </div>
+
+            <div class="image-stack__item-2B">
+                <a href="javascript:history.back()" class="btn btn-default btn-lg"> GO BACK </a>
+                </a>
+            </div>
+
+            <div class="image-stack__item-5B">
+                <a href="img/välkkylä 2.jpg">
+                    <img src="img/välkkylä 2.jpg" ; width="100%">
+                </a>
+            </div>
+
+            <div class="image-stack__item-7">
+                <a href="img/välkkylä 5.jpg">
+                    <img src="img/välkkylä 5.jpg" ; width="100%">
+                </a>
+            </div> 
+
+            <!--<div class="image-stack__item-6">
+                <a href="img/välkkylä 5.jpg">
+                    <img src="img/välkkylä 5.jpg" ; width="100%">
+                </a>
+            </div>-->
+
+            <div class="image-stack__item-8">
+                <a href="img/välkkylä 4.jpg">
+                    <img src="img/välkkylä 4.jpg" ; width="100%">
+                </a>
+            </div>
+
+            <!--<div class="image-stack__item-9">
+                <a href="img/CO-LIVING QUARTERS 6.jpg">
+                    <img src="img/CO-LIVING QUARTERS 6.jpg" ; width="100%">
+                </a>
+            </div>-->
+        </div>
+
+    </div>
+
+    </div>
+
+
+</body>
