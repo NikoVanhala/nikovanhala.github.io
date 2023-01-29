@@ -20,6 +20,7 @@ p {
 	line-height: 24px;
 }
 a{
+	font-size: 20px;
 	color: #555;
 	border: 1px solid #555;
 	padding: 14px 20px;
@@ -178,11 +179,19 @@ a:hover, a:focus, a:active {
 @media screen and (max-width: 1024px) {
 
 	  .container {
+		padding-top: 140px;
 		width: 100%;
 		max-width: 97%;
 	  }
 	  .top{
 		width: 97%;
+	  }
+	  a{
+		font-size: 40px;
+	  }	  
+	  .logo{
+		max-height: 90px;
+		height: 90px;
 	  }
 	  .bottom-padding{
 		padding-bottom: 400px;
